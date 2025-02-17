@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div id="passwordPage">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Enter</button>
+    </div>
+
+    <div id="namePage" style="display: none;">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <button onclick="enterChat()">Enter Chat</button>
+    </div>
+
+    <div id="chatRoom" style="display: none;">
+        <h2>Chat Room</h2>
+        <div id="chatDisplay"></div>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
